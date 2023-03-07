@@ -1,0 +1,111 @@
+body{
+  width: 100%;
+  margin: 2em 6% 2em 5%;
+}
+
+@media all and (min-width: 600px) {
+body{
+  margin-left: 9%;
+}
+}
+
+#quote{
+  width: 90%;
+  min-height: 26em;
+  border-radius: 20px;
+  position: relative;
+  background: url("images.jpeg");
+  background-position: center;
+  background-size: 220%;
+  overflow-wrap: break-word;
+}
+
+@media all and (min-width: 600px) {
+#quote{
+  margin-bottom: .7em;
+}
+}
+
+.main{
+  position: relative;
+  width: 100%;
+  overflow-wrap: break-word;
+}
+
+.header{
+  text-align: center;
+  font-size: 1.5em;
+  font-family: "Xanh Mono", monospace;
+  padding-top: .8em;
+  color: black;
+}
+
+@media all and (min-width: 600px) {
+.header{
+  font-size: 2.2em;
+}
+}
+
+.mainText{
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  text-align: center;
+  margin: -1em 7% 0 7%;
+  font-family: "Amita", "Gill sans", geor;
+  width: 85%;
+}
+
+@media all and (min-width: 600px) {
+.mainText{
+  font-size: 1.7em;
+}
+}
+
+.footer{
+  font-size: .9em;
+  text-align: right;
+  font-family: 'Nova Slim', sans-serif;
+  font-style: bolder;
+  padding: 1em;
+  margin-top: -.5em;
+  color: white;
+}
+
+@media all and (min-width: 600px) {
+  .footer {
+    font-size: 1.7em;
+  }
+}
+
+.changePage{
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(2, 70%);
+  overflow-x: hidden;
+  overflow-y: visible;
+}
+
+
+.next, .previous{
+  min-height: 1em;
+  line-height: 1.2em;
+}
+
+.next a, .previous a{
+  text-decoration: none;
+  -webkit-user-select: none;
+  color: black;
+  font-family: "Ubuntu",sans-serif;
+  font-weight: bold;
+  font-style: italic;
+}
+
+@media all and (min-width: 600px) {
+  .next a, .previous a {
+    font-size: 1.5em;
+  }
+}
+
+.overflow{
+  margin-left: -3em;
+}

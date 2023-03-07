@@ -1,0 +1,234 @@
+body{
+  width: 100%;
+  margin: -1.4em auto;
+}
+
+@media all and (min-width: 600px){
+  body{
+    margin: -2em auto;
+  }
+}
+
+#main{
+  width: 100%;
+  min-height: 38em;
+  /*position: relative;*/
+  background: url("048860064c7bfcad2dff2ceefcde8726.jpg");
+  background-position: center;
+  background-size: 100%;
+}
+
+@media all and (min-width: 600px) {
+  #main{
+    min-height: 75em;
+  }
+}
+
+#main .header{
+  text-align: center;
+  font-family: "Federicka the great", "PT Sans narrow", Cambria;
+  padding-top: 1.3em;
+  color: white;
+}
+
+@media all and (min-width: 600px){
+  #main .header{
+    font-size: 3em;
+  }
+}
+
+.intro{
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.1em;
+  color: white;
+  line-height: 1.2em;
+}
+
+@media all and (min-width: 600px){
+  .intro{
+    font-size: 2.5em;
+  }
+}
+
+.arrow{
+  height: 3em;
+  width: 3em;
+  border-radius: 50%;
+  background: url("arrow-down-icon-design-illustrationglyph-260nw-1936141711_1.jpg");
+  background-size: 100%;
+  background-position: center;
+  margin-left: 9em;
+  animation: moveArrow 1s infinite ease;
+}
+
+@media all and (min-width: 600px){
+  .arrow{
+  height: 5em;
+  width: 5em;
+  margin-left: 28em;
+  }
+}
+
+@keyframes moveArrow{
+  from{transform: translateY(0);}
+  to{transform: translateY(-10px);}
+}
+
+.changePage{
+  width: 7em;
+  height: 1.8em;
+  border-radius: 20px;
+  margin: .8em 7em;
+  padding-top: .3em;
+  border: 1px solid white;
+  text-align: center;
+}
+
+@media all and (min-width: 600px){
+  .changePage{
+  height: 3em;
+  width: 10em;
+  margin-left: 25.5em;
+  padding-top: 1em;
+  border-radius: 30px;
+  }
+}
+
+.changePage a{
+  text-decoration: none;
+  color: white;
+  font-family: "Amita";
+}
+
+@media all and (min-width: 600px){
+  .changePage a{
+  font-size: 1.3em;
+  }
+}
+
+
+#about, #contact{
+  margin: 3.5em 1em;
+}
+
+#about h3, #contact h3{
+  font-size: 1.8em;
+  font-family: "Federicka the great", "PT Sans narrow";
+  margin-bottom: 0;
+  color: #212B98;
+}
+
+@media all and (min-width: 600px){
+  #about h3, #contact h3{
+  font-size: 3em;
+  }
+}
+
+.abt{
+  max-height: 12em;
+  overflow-y: hidden;
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 1.3em;
+  transition: all .3s;
+}
+
+#about .abt.show{
+  max-height: 25em;
+  overflow-y: visible;
+}
+
+@media all and (min-width: 600px){
+  .abt{
+  max-height: 9.6em;
+  font-size: 2em;
+  }
+}
+
+.abt .btn, .abt .btn2{
+  width: 8em;
+  height: 2.3em;
+  border: none;
+  border-radius: 20px;
+  background: #212B98;
+  color: white;
+  font-family: "Dosis", sans-serif;
+}
+
+.abt .btn2{
+  border: 1px solid #212B98;
+  background: transparent;
+  margin-left: 3em;
+}
+
+.abt .btn2 a{
+  text-decoration: none;
+  color: #212B98;
+}
+
+@media all and (min-width: 600px){
+  .abt .btn, .abt .btn2{
+  width: 7em;
+  height: 2.3em;
+  border-radius: 35px;
+  font-size: .8em;
+  }
+}
+
+@media all and (min-width: 600px){
+  .abt .btn2{
+  width: 7em;
+  height: 2.3em;
+  margin-left: 7em;
+  }
+}
+
+#contact p{
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 1.3em;
+  color: #212B98;
+}
+
+@media all and (min-width: 600px){
+#contact p{
+  font-size: 3em;
+  }
+}
+
+
+#contact p a, .a{
+  font-size: .8em;
+  color: black;
+  text-decoration: none;
+}
+
+@media all and (min-width: 600px){
+#contact p{
+  font-size: 2em;
+  }
+}
+
+.other{
+  margin-left: 6em;
+}
+
+@media all and (min-width: 600px){
+ .other{
+  margin-left: 13em;
+  }
+}
+
+.other a{
+  -webkit-user-select: none;
+}
+
+.instagram img, .twitter img, .facebook img{
+  max-width: 16%;
+}
+
+@media all and (min-width: 600px) {
+  .instagram img, .twitter img, .facebook img{
+  max-width: 8%;
+  margin-left: 5em;
+}
+}

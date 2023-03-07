@@ -1,0 +1,122 @@
+body{
+  width: 100%;
+  margin: -6em 6% 1em 5%;
+}
+
+@media all and (min-width: 600px) {
+body{
+  margin-left: 7%;
+}
+}
+
+
+#quote{
+  width: 90%;
+  min-height: 26em;
+  border-radius: 20px;
+  position: relative;
+  background: url("poem.jpeg");
+  background-position: center;
+  background-size: 170%;
+  overflow-wrap: break-word;
+}
+
+@media all and (min-width: 600px) {
+#quote{
+  margin-bottom: .7em;
+}
+}
+
+
+.rose{
+  position: relative;
+  width: 7em;
+  height: 7em;
+  transform: translate(14em,7em);
+  z-index: 5;
+}
+
+@media all and (min-width: 600px) {
+.rose{
+  transform: translate(32em,7em);
+}
+}
+
+
+.rose img{
+  max-width: 100%;
+}
+
+.main{
+  position: relative;
+  width: 100%;
+  overflow-wrap: break-word;
+}
+
+.header{
+  text-align: center;
+  font-size: 1.5em;
+  font-family: "Ubuntu", sans-serif;
+  padding-top: .8em;
+  color: rgba(204, 37, 37, 1);
+}
+
+@media all and (min-width: 600px) {
+.header{
+  font-size: 2em;
+}
+}
+
+.mainText{
+  color: white;
+  text-align: center;
+  margin: -1.5em 1.5%;
+  font-family: 'Amita', "Gill sans", sans-serif;
+}
+
+@media all and (min-width: 600px) {
+.mainText{
+  font-size: 1.2em;
+}
+}
+
+.footer{
+  font-size: .8em;
+  text-align: right;
+  z-index: 2;
+  top: 23em;
+  left: 60%;
+  font-family: 'Nova Slim', cursive;
+  font-style: bold;
+  padding: 1em;
+  color: rgba(204, 37, 37, 1);
+}
+
+@media all and (min-width: 600px) {
+  .footer {
+    font-size: 1.2em;
+  }
+}
+
+.changePage{
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(2, 70%);
+  overflow-x: hidden;
+  overflow-y: visible;
+}
+
+
+.next, .previous{
+  min-height: 1em;
+  line-height: 1.2em;
+}
+
+.next a, .previous a{
+  text-decoration: none;
+  -webkit-user-select: none;
+  color: rgba(198, 14, 14, 1);
+  font-family: "Ubuntu",sans-serif;
+  font-weight: bold;
+  font-style: italic;
+}
